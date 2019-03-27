@@ -62,7 +62,7 @@ const server = http.createServer((req, res) => {
 //一个request,这个是来自请求方的信息合集
 //一个response,由我们(Node)返回过去给请求方的
 ```
-对于http,想必大家不陌生,关于三次握手这种经典的面试题就不在赘述了,这里最重要的东西就是req何res,这2大金刚将伴随我们的NodeJS生涯,搞懂了req跟res,NodeJS你就掌握了一大半,所以,请牢记;
+对于http,想必大家不陌生,关于三次握手这种经典的面试题就不在赘述了,这里最重要的东西就是req和res,这2大金刚将伴随我们的NodeJS生涯,搞懂了req跟res,NodeJS你就掌握了一大半,所以,请牢记;
 这次的low应用,我们并没使用req对象,没有从请求方获取信息;
 但是对于res,且看我们仔细分析:
 ```Javascript {.line-numbers}

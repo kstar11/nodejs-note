@@ -17,7 +17,7 @@ const server = http.createServer((req, res) => {
     </html>
     `
     );
-    res.end();
+    // res.end();
 });
 
 server.listen(3000);

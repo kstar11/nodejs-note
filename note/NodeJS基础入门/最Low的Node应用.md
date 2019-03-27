@@ -48,7 +48,7 @@ const http = require('http');
 ```
 首先,强制性告诉大家并记住,NodeJS是遵从commonjs规范的,而commonjs引入其他的文件/模块就是以require(路径)的方式进行;
 **至于什么是commonjs规范,什么是ESModule请大家自行百度阮一峰前辈,或者廖雪峰前辈,他们的个人博客上面都有非常详细的介绍**
-其后,你可以暂时理解require(路径)等效于我们html中的
+如果你对commonjs没有任何头绪,你可以暂时理解require(路径)等效于我们html中的
 ```
 <script src="路径"></script>
 ```

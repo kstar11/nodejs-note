@@ -56,7 +56,9 @@ const http = require('http');
 在下一节,我们会详细讲解NodeJS的几大常用模块,现在,我们继续分析代码;
 ```Javascript {.line-numbers}
 const server = http.createServer((req, res) => {
-//前面我们引入的http模块,他是一个对象,在这里,我们调用他的createServer方法,这个方法有2个参数;
+//前面我们引入的http模块,他是一个对象,在这里,我们调用他的createServer方法;
+//createServer他在执行之后会创建一个web服务,这个方法有2个参数
+## 升阶思考:为什么这里会用一个回调函数来进行操作? ##
 //一个request,这个是来自请求方的信息合集
 //一个response,由我们(Node)返回过去给请求方的
 ```

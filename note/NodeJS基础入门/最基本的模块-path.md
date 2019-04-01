@@ -37,4 +37,4 @@ path.parse(path);
 path.isAbsolute(path);
 //返回一个Boolean,判断path是否为绝对路径;
 
-更多api,请自行阅读[NodeJS中文文档](http://nodejs.cn/api/)
+更多api,请自行阅读[NodeJS中文文档](http://nodejs.cn/api/path.html)

@@ -18,4 +18,4 @@ http作为服务端的效果,在上一节我们已经体验过了,我们可以�
 
 **实际开发中我们一般会使用第三方插件进行请求,例如superagent,fetch,curl等,原生http.request的方法要把值解析出来还挺麻烦的,当然,有空的话,一定要试着自己去解析一波!**
 
-更多api,请自行阅读[NodeJS中文文档](http://nodejs.cn/api/)
+更多api,请自行阅读[NodeJS中文文档](http://nodejs.cn/api/http.html)

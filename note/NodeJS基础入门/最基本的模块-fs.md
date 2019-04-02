@@ -22,6 +22,7 @@ fs.readFile('../NodeJS基础入门/从开始写起.md','utf8',(err,data)=>{
 从上面的例子,我们不难看出,fs.readFile方法是一个经典的异步回调方法,就如我们在经典ajax中的success一样,离开callback的范围,文件的内容将无法获得;
 
 fs.readFileSync(path,options);
+
 ```javascript {.line-numbers}
 const fs = require('fs');
 const mdfile = fs.readFileSync('../NodeJS基础入门/从开始写起.md','utf8');
@@ -31,13 +32,17 @@ console.log(mdfile);
 通过这个例子,我们不难想象,ES6+提出的async/await(当然,如果你没了解过async/await,请百度);
 
 * ##### 读取文件夹
+
 fs.readdir(path,options,callback);
+
 与readFile一样,readdir返回的是path所在的目录下所有的文件以及文件夹;
 
 fs.readdirSync同readFileSync;
 
 * ##### 写入文件
+
 fs.writeFile(file,data,options,callback);
+
 ```javascript {.line-numbers}
 const fs = require('fs');
 fs.writeFile('./text.txt','测试一下文件写入','utf8',(err)=>{
@@ -48,15 +53,22 @@ fs.writeFile('./text.txt','测试一下文件写入','utf8',(err)=>{
 // 因为NodeJS的异步问题,杜绝同时对一个文件进行多次写入
 ```
 fs.writeFileSync(file,data,options);
+
 此api返回undefined,调用即执行;
 
 ---
 其他api:
+
 //文件信息
+
 fs.stat() 
+
 //复制文件 =>有sync版本
+
 fs.copyFile(source,destination,options,callback);
+
 //创建文件夹 =>有sync版本
+
 fs.mkdir(source,destination,options,callback);
 
 更多api,请自行阅读[NodeJS中文文档](http://nodejs.cn/api/fs.html)

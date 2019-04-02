@@ -11,9 +11,13 @@ ___
 
 #### 相对路径
 path.relative(source,destination);
+
 这个方法将返回从source到destination的相对路径,即是(./xxx/xxx || ../xxx/xxx),此方法用得较少;
+
 path.join(path1,path2,path3...);
+
 此方法将会把传入的path片段组成一个规范的路径地址返回,如:
+
 ```javascript {.line-numbers}
 const path = require('path');
 const path1 = path.join('examples','HelloNode','test.js');
@@ -22,7 +26,9 @@ console.log(path1);
 ```
 #### 绝对路径
 path.resolve(path1,path2...);
+
 这个方法将返回一个绝对路径,能生成绝对路径的path参数将被使用,不能生成的将被抛弃,如果不传参,返回当前工作目录的绝对路径;
+
 ```javascript {.line-numbers}
 const path = require('path');
 const path1 = path.resolve('examples','HelloNode');
@@ -31,10 +37,15 @@ console.log(path1);
 ```
 在NodeJS中,有一个__dirname的全局变量,使用__dirname可以获得当前文件夹的绝对路径,于是乎,工作中一般会直接使用path.join(__dirname,'../xxx');
 
+同时,请自行理解__filename以及process.cwd();
+
 #### 其他
 path.parse(path);
+
 //返回一个对象,包含从path的根路径到文件名的全部信息;
+
 path.isAbsolute(path);
+
 //返回一个Boolean,判断path是否为绝对路径;
 
 更多api,请自行阅读[NodeJS中文文档](http://nodejs.cn/api/path.html)

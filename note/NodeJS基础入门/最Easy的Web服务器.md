@@ -17,10 +17,15 @@ server.listen(3000);
 ```
 代码解析:
 1 首先我们分别引入了http,path,fs模块;
+
 2 随后我们使用http.createServer创建一个web应用;
+
 3 使用fs.readFileSync读取test.html的内容,文件路径使用path.join进行解析;
+
 4 使用res描述响应状态和content-type;
+
 5 将读取到的文件信息的字符串内容传递给res的内容区域;
+
 6 完成并结束返回信息
 
 ---

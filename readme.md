@@ -26,3 +26,7 @@
   *  [4.2 是时候学点新的东西了!](./note/NodeJS全力突击-koa2/是时候学点新的东西了.md)
   *  [4.3 ctx是神马东东?](./note/NodeJS全力突击-koa2/ctx是神马东东.md)
   *  [4.3 爽翻天的async/await](./note/NodeJS全力突击-koa2/ctx是神马东东.md)
+
+---
+喜欢请给start!
+或访问我的[个人博客](http://www.qiyanjiudian.com)

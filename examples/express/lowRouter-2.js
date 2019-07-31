@@ -1,8 +1,5 @@
 const http = require('http');
-const path = require('path');
 const url = require('url');
-const fs = require('fs');
-const queryString = require('querystring');
 
 const server = http.createServer((req, res) => {
   const requestMethod = req.method;

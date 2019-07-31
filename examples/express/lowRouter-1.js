@@ -1,15 +1,24 @@
-const http = require('http');
-const path = require('path');
-const url = require('url');
-const fs = require('fs');
-const queryString = require('querystring');
+const http = require("http");
+const path = require("path");
+const url = require("url");
+const fs = require("fs");
 
 const server = http.createServer((req, res) => {
-  console.log(url.parse(req.url).pathname);
-  console.log(req.method);
-  console.log(queryString.parse(url.parse(req.url).query));
-  let htmlString = fs.readFileSync(path.join(__dirname, 'test.html'), 'utf8');
-  res.writeHead(200, { 'Content-Type': 'text/html' });
+  const route = url.parse(req.url).pathname;
+  let htmlString;
+  switch (route) {
+    case "/login":
+      htmlString = "您好！欢迎登陆！";
+      break;
+    case "/home":
+      htmlString = "欢迎光临，这是我的个人首页！";
+      break;
+    default:
+      htmlString = "这是一个简单网站的路由";
+      break;
+  }
+
+  res.writeHead(200, { "Content-Type": "text/html; charset=utf-8" });
   res.write(htmlString);
   res.end();
 });
